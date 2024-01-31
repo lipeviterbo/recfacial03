@@ -59,7 +59,9 @@ const loadLabels = () => {
         return new faceapi.LabeledFaceDescriptors(label, descriptions)
     }))
 }
-
+        
+console.log("parte 02");//debug
+        
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri('./assets/lib/face-api/models'),
     faceapi.nets.faceLandmark68Net.loadFromUri('./assets/lib/face-api/models'),
@@ -113,6 +115,7 @@ cam.addEventListener('play', async () => {
         })
     }, 100)
 })
+        console.log("parte 03 - final");//debug
     </script>
 </body>
 </html>
